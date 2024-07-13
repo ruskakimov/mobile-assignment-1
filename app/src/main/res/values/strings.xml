@@ -4,8 +4,6 @@
     <string-array name="groups_array">
         <item>Twice</item>
         <item>ITZY</item>
-        <item>NMIXX</item>
         <item>Blackpink</item>
-        <item>(G)I-DLE</item>
     </string-array>
 </resources>
