@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">KPOP Idol Catalog</string>
     <string name="group_spinner_label">Select Group:</string>
+    <string name="shuffle_button_label">Shuffle  🎲</string>
     <string-array name="groups_array">
         <item>Twice</item>
         <item>ITZY</item>
