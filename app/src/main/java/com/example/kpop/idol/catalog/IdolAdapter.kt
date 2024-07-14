@@ -36,4 +36,9 @@ class IdolAdapter(private var idols: List<Idol>) :
         this.idols = newIdols
         notifyDataSetChanged()
     }
+
+    fun shuffleIdols() {
+        val shuffledIdols = this.idols.shuffled()
+        this.updateIdols(shuffledIdols)
+    }
 }

@@ -54,14 +54,14 @@ class MainActivity : AppCompatActivity() {
                 idolAdapter.updateIdols(idols)
             }
             override fun onNothingSelected(p0: AdapterView<*>?) {
-                TODO("Not yet implemented")
+                // Do nothing.
             }
         }
 
         // Setup button.
-        val searchButton = findViewById<Button>(R.id.search_button)
-        searchButton.setOnClickListener {
-//            searchButton.text = "More"
+        val shuffleButton = findViewById<Button>(R.id.shuffle_button)
+        shuffleButton.setOnClickListener {
+            idolAdapter.shuffleIdols()
         }
     }
 
