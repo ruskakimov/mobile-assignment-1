@@ -9,8 +9,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -19,6 +22,15 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        // Initialize RecyclerView.
+        val viewManager = LinearLayoutManager(this)
+        val idolAdapter = IdolAdapter(listOf())
+        val recyclerView = findViewById<RecyclerView>(R.id.idols_recycler_view).apply {
+            setHasFixedSize(true)
+            layoutManager = viewManager
+            adapter = idolAdapter
         }
 
         // Populate KPOP group spinner with the list of groups.
@@ -38,6 +50,7 @@ class MainActivity : AppCompatActivity() {
                 val selectedGroup = parent.getItemAtPosition(position).toString()
                 println(selectedGroup)
                 val idols = getIdols(selectedGroup)
+                idolAdapter.updateIdols(idols)
             }
             override fun onNothingSelected(p0: AdapterView<*>?) {
                 TODO("Not yet implemented")
