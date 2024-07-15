@@ -86,10 +86,10 @@ class MainActivity : AppCompatActivity() {
                 Idol("Yuna", "유나", "December 9, 2003", "ENFP", R.drawable.itzy_yuna),
             )
             "Blackpink" -> listOf(
-                Idol("Jisoo", "지수", "January 3, 1995", "INFJ", R.drawable.twice_nayeon),
-                Idol("Jennie", "제니", "January 16, 1996", "ISTP", R.drawable.twice_nayeon),
-                Idol("Rosé", "로제", "February 11, 1997", "ISFP", R.drawable.twice_nayeon),
-                Idol("Lisa", "리사", "March 27, 1997", "ENFP", R.drawable.twice_nayeon)
+                Idol("Jisoo", "지수", "January 3, 1995", "INFJ", R.drawable.blackpink_jisoo),
+                Idol("Jennie", "제니", "January 16, 1996", "ISTP", R.drawable.blackpink_jennie),
+                Idol("Rosé", "로제", "February 11, 1997", "ISFP", R.drawable.blackpink_rose),
+                Idol("Lisa", "리사", "March 27, 1997", "ENFP", R.drawable.blackpink_lisa),
             )
             else -> listOf()
         }
