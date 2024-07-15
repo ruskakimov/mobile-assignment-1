@@ -11,6 +11,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
 
@@ -42,6 +49,19 @@
             android:layout_height="wrap_content"
             tools:text="MBTI"
             android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/idol_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/twice_nayeon"
+        app:shapeAppearanceOverlay="@style/RoundedCornersImageView" />
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
