@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.imageview.ShapeableImageView
 
 class IdolAdapter(private var idols: List<Idol>) :
     RecyclerView.Adapter<IdolAdapter.IdolViewHolder>() {
@@ -14,6 +15,7 @@ class IdolAdapter(private var idols: List<Idol>) :
         val idolKoreanName: TextView = itemView.findViewById(R.id.idol_korean_name)
         val idolBirthday: TextView = itemView.findViewById(R.id.idol_birthday)
         val idolMbti: TextView = itemView.findViewById(R.id.idol_mbti)
+        val idolImage: ShapeableImageView = itemView.findViewById(R.id.idol_image)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IdolViewHolder {
@@ -28,6 +30,7 @@ class IdolAdapter(private var idols: List<Idol>) :
         holder.idolKoreanName.text = idol.koreanName
         holder.idolBirthday.text = idol.birthday
         holder.idolMbti.text = idol.mbti
+        holder.idolImage.setImageResource(idol.imageResId)
     }
 
     override fun getItemCount() = idols.size

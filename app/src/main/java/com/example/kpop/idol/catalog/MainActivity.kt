@@ -68,32 +68,32 @@ class MainActivity : AppCompatActivity() {
     private fun getIdols(groupName: String): List<Idol> {
         return when (groupName) {
             "Twice" -> listOf(
-                Idol("Nayeon", "임나연", "September 22, 1995", "ISTP"),
-                Idol("Jeongyeon", "유정연", "November 1, 1996", "ISFJ"),
-                Idol("Momo", "모모", "November 9, 1996", "INFP"),
-                Idol("Sana", "사나", "December 29, 1996", "ENFP"),
-                Idol("Jihyo", "박지효", "February 1, 1997", "ISFP"),
-                Idol("Mina", "미나", "March 24, 1997", "ISFP"),
-                Idol("Dahyun", "다현", "May 28, 1998", "ISFJ"),
-                Idol("Chaeyoung", "채영", "April 23, 1999", "INFP"),
-                Idol("Tzuyu", "쯔위", "June 14, 1999", "ISFP")
+                Idol("Nayeon", "임나연", "September 22, 1995", "ISTP", R.drawable.twice_nayeon),
+                Idol("Jeongyeon", "유정연", "November 1, 1996", "ISFJ", R.drawable.twice_jeongyeon),
+                Idol("Momo", "모모", "November 9, 1996", "INFP", R.drawable.twice_momo),
+                Idol("Sana", "사나", "December 29, 1996", "ENFP", R.drawable.twice_sana),
+                Idol("Jihyo", "박지효", "February 1, 1997", "ISFP", R.drawable.twice_jihyo),
+                Idol("Mina", "미나", "March 24, 1997", "ISFP", R.drawable.twice_mina),
+                Idol("Dahyun", "다현", "May 28, 1998", "ISFJ", R.drawable.twice_dahyun),
+                Idol("Chaeyoung", "채영", "April 23, 1999", "INFP", R.drawable.twice_chaeyoung),
+                Idol("Tzuyu", "쯔위", "June 14, 1999", "ISFP", R.drawable.twice_tzuyu)
             )
             "ITZY" -> listOf(
-                Idol("Yeji", "예지", "May 26, 2000", "ESFJ"),
-                Idol("Lia", "리아", "July 21, 2000", "ENFJ"),
-                Idol("Ryujin", "류진", "April 17, 2001", "INTJ"),
-                Idol("Chaeryeong", "채령", "June 5, 2001", "INFJ"),
-                Idol("Yuna", "유나", "December 9, 2003", "ENFP")
+                Idol("Yeji", "예지", "May 26, 2000", "ESFJ", R.drawable.twice_nayeon),
+                Idol("Lia", "리아", "July 21, 2000", "ENFJ", R.drawable.twice_nayeon),
+                Idol("Ryujin", "류진", "April 17, 2001", "INTJ", R.drawable.twice_nayeon),
+                Idol("Chaeryeong", "채령", "June 5, 2001", "INFJ", R.drawable.twice_nayeon),
+                Idol("Yuna", "유나", "December 9, 2003", "ENFP", R.drawable.twice_nayeon)
             )
             "Blackpink" -> listOf(
-                Idol("Jisoo", "지수", "January 3, 1995", "INFJ"),
-                Idol("Jennie", "제니", "January 16, 1996", "ISTP"),
-                Idol("Rosé", "로제", "February 11, 1997", "ISFP"),
-                Idol("Lisa", "리사", "March 27, 1997", "ENFP")
+                Idol("Jisoo", "지수", "January 3, 1995", "INFJ", R.drawable.twice_nayeon),
+                Idol("Jennie", "제니", "January 16, 1996", "ISTP", R.drawable.twice_nayeon),
+                Idol("Rosé", "로제", "February 11, 1997", "ISFP", R.drawable.twice_nayeon),
+                Idol("Lisa", "리사", "March 27, 1997", "ENFP", R.drawable.twice_nayeon)
             )
             else -> listOf()
         }
     }
 }
 
-data class Idol(val name: String, val koreanName: String, val birthday: String, val mbti: String)
+data class Idol(val name: String, val koreanName: String, val birthday: String, val mbti: String, val imageResId: Int)
