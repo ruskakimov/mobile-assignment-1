@@ -79,11 +79,11 @@ class MainActivity : AppCompatActivity() {
                 Idol("Tzuyu", "쯔위", "June 14, 1999", "ISFP", R.drawable.twice_tzuyu)
             )
             "ITZY" -> listOf(
-                Idol("Yeji", "예지", "May 26, 2000", "ESFJ", R.drawable.twice_nayeon),
-                Idol("Lia", "리아", "July 21, 2000", "ENFJ", R.drawable.twice_nayeon),
-                Idol("Ryujin", "류진", "April 17, 2001", "INTJ", R.drawable.twice_nayeon),
-                Idol("Chaeryeong", "채령", "June 5, 2001", "INFJ", R.drawable.twice_nayeon),
-                Idol("Yuna", "유나", "December 9, 2003", "ENFP", R.drawable.twice_nayeon)
+                Idol("Yeji", "예지", "May 26, 2000", "ESFJ", R.drawable.itzy_yeji),
+                Idol("Lia", "리아", "July 21, 2000", "ENFJ", R.drawable.itzy_lia),
+                Idol("Ryujin", "류진", "April 17, 2001", "INTJ", R.drawable.itzy_ryujin),
+                Idol("Chaeryeong", "채령", "June 5, 2001", "INFJ", R.drawable.itzy_chaeryeong),
+                Idol("Yuna", "유나", "December 9, 2003", "ENFP", R.drawable.itzy_yuna),
             )
             "Blackpink" -> listOf(
                 Idol("Jisoo", "지수", "January 3, 1995", "INFJ", R.drawable.twice_nayeon),
